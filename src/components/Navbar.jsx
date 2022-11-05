@@ -12,10 +12,10 @@ const Navbar = ({ active }) => {
           <span className="ml-3 text-xl">Entertainer</span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <Link href="/movies" className={`mr-5 hover:text-white ${active === 'Movies' && 'text-white'}`}>
+          <Link href="/movies" className={`mr-5 hover:text-white ${active === 'movies' && 'text-white'}`}>
             Movies / Series
           </Link>
-          <Link href="/anime" className={`mr-5 hover:text-white ${active === 'Anime' && 'text-white'}`}>
+          <Link href="/anime" className={`mr-5 hover:text-white ${active === 'anime' && 'text-white'}`}>
             Anime
           </Link>
           {/* <a className="mr-5 hover:text-white">Third Link</a>
