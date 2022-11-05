@@ -155,24 +155,24 @@ const Modal = ({ setModalOpen, modalData, setWatching, setWishlisted, setComplet
                 />
               </div>
             </div>
-            <div className="p-2 w-full mt-2 flex">
+            <div className="p-2 px-3 w-full mt-2 flex space-x-2">
               <button
-                className="flex mx-auto text-white bg-green-600 border-0 py-1.5 pb-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg font-semibold items-end gap-2"
-                onClick={() => {
-                  updateEntertainment();
-                }}
-              >
-                Update Entertainment
-                <MdLibraryAddCheck className="mb-[3px]" />
-              </button>
-              <button
-                className="flex mx-auto text-white bg-red-600 border-0 py-1.5 pb-2 px-8 focus:outline-none hover:bg-red-700 w-[43%] justify-center rounded text-lg font-semibold items-end gap-2"
+                className="flex w-1/2 text-white bg-red-600 border-0 py-1.5 pb-2 px-8 focus:outline-none hover:bg-red-700 justify-center rounded text-lg font-semibold items-end gap-2"
                 onClick={() => {
                   setModalOpen(false);
                 }}
               >
                 Cancel
                 <MdCancel className="mb-[4px]" />
+              </button>
+              <button
+                className="flex w-1/2 text-white bg-green-600 border-0 py-1.5 pb-2 px-8 focus:outline-none hover:bg-green-700 rounded text-lg font-semibold items-end gap-2"
+                onClick={() => {
+                  updateEntertainment();
+                }}
+              >
+                Update Entertainment
+                <MdLibraryAddCheck className="mb-[3px]" />
               </button>
             </div>
           </div>
