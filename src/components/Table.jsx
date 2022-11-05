@@ -9,7 +9,7 @@ const Table = ({ data, setWatching, setWishlisted, setCompleted }) => {
   return (
     <div className="flex flex-col pb-1">
       <div className="overflow-x-auto -mx-2">
-        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div className="py-2 inline-block min-w-full px-4">
           <div className="overflow-hidden text-center">
             {data.length > 0 ? (
               <table className="min-w-full">

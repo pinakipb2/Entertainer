@@ -12,7 +12,7 @@ const AccordionLayout = ({ title, children, index, activeIndex, setActiveIndex }
         </div>
         <div className="flex items-center justify-center">{activeIndex === index ? <BsFillArrowUpCircleFill className="w-8 h-8" /> : <BsFillArrowDownCircleFill className="w-8 h-8" />}</div>
       </div>
-      {activeIndex === index && <div className="shadow-white rounded-b-md p-4 mb-1 bg-white text-black w-11/12">{children}</div>}
+      {activeIndex === index && <div className="shadow-white rounded-b-md py-4 mb-1 bg-white text-black w-11/12">{children}</div>}
     </>
   );
 };
