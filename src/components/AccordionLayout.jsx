@@ -6,7 +6,7 @@ const AccordionLayout = ({ title, children, index, activeIndex, setActiveIndex }
   const handleSetIndex = (index) => (activeIndex !== index ? setActiveIndex(index) : setActiveIndex(0));
   return (
     <>
-      <div onClick={() => handleSetIndex(index)} className="flex w-11/12 justify-between p-3 px-6 mt-3 rounded bg-gray-600 shadow-md">
+      <div onClick={() => handleSetIndex(index)} className="flex w-11/12 justify-between p-3 px-6 mt-3 rounded bg-gray-600 shadow-md hover:cursor-pointer">
         <div className="flex">
           <div className="text-white font-semibold text-xl">{title.toUpperCase()}</div>
         </div>
